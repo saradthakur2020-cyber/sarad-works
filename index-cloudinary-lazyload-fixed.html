@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f2efe8">
+<title>Sarad Pratap Singh — Editor & Visual Storyteller</title>
+<meta name="description" content="Sarad Pratap Singh — Video editor, motion designer and post-production creative.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f7f7f2;--ink:#171717;--muted:#66665f;--line:#bdbdb5;--acid:#d8f36a;--coral:#ff6548;--blue:#9ec5ff;--max:1320px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}a{color:inherit;text-decoration:none}
+.wrap{width:min(var(--max),calc(100% - 76px));margin:auto}.mono{font:10px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+.topbar{height:76px;display:flex;align-items:center;border-bottom:1px solid var(--line);position:relative;z-index:5;background:var(--paper)}
+.nav{display:flex;align-items:center;justify-content:space-between;width:100%}.brand{display:flex;align-items:center;font:700 18px "Space Grotesk",sans-serif;letter-spacing:-.07em}.brand-mark{width:29px;height:29px;margin-right:9px}
+.links{display:flex;gap:34px;align-items:center;font-size:12px;font-weight:600}.links a{transition:opacity .2s}.links a:hover{opacity:.5}.links a:last-child{border:1px solid var(--ink);border-radius:50px;padding:11px 17px}
+.hero{padding:48px 0 70px;min-height:690px;display:flex;flex-direction:column;justify-content:space-between;border:0!important}.hero-top{display:flex;justify-content:space-between;align-items:center}.availability{display:flex;align-items:center;gap:9px}.dot{width:8px;height:8px;background:#78a84c;border-radius:50%;display:inline-block}
+.hero h1{font:600 clamp(70px,12vw,166px)/.82 "Space Grotesk",sans-serif;letter-spacing:-.105em;margin:66px 0 48px;max-width:1150px}.hero h1 .outline{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.hero-bottom{display:grid;grid-template-columns:1fr auto;gap:35px;align-items:end}.hero-bottom p{font:500 clamp(19px,2.2vw,27px)/1.24 "Space Grotesk",sans-serif;letter-spacing:-.055em;max-width:590px;margin:0}.hero-bottom p em{font-style:normal;background:var(--acid);padding:0 5px}
+.hero-cta{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}.button{display:inline-flex;align-items:center;gap:20px;padding:14px 19px;border:1px solid var(--ink);border-radius:50px;font-size:11px;font-weight:700;transition:.2s}.button.dark{background:var(--ink);color:white}.button.hot{background:var(--acid);border-color:var(--acid);color:var(--ink)}.button:hover{transform:translateY(-3px)}
+.ticker{overflow:hidden;background:var(--acid);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:15px 0;white-space:nowrap}.ticker-track{display:inline-block;animation:move 32s linear infinite;font:700 13px "Space Grotesk",sans-serif;text-transform:uppercase}.ticker-track span{padding:0 26px}.ticker-track b{color:var(--coral)}@keyframes move{to{transform:translateX(-50%)}}
+section{padding:105px 0;border-bottom:1px solid var(--line)}.section-label{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}.section-label h2{font:600 clamp(43px,6.4vw,82px)/.91 "Space Grotesk",sans-serif;letter-spacing:-.09em;margin:12px 0 0}.section-label .mono{color:var(--muted)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:9vw}.big-copy{font:500 clamp(25px,3.6vw,46px)/1.12 "Space Grotesk",sans-serif;letter-spacing:-.07em;margin:0}.big-copy span{background:var(--acid);padding:0 5px}.bio{font-size:14px;line-height:1.85;color:var(--muted);max-width:530px}
+.numbers{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:43px}.number{padding:17px 10px 0 0}.number strong{font:600 35px "Space Grotesk",sans-serif;letter-spacing:-.08em;display:block}.number span{font:10px "DM Mono",monospace;text-transform:uppercase;color:var(--muted)}
+.portfolio-intro{display:flex;justify-content:space-between;gap:30px;align-items:end;margin:-8px 0 30px}.portfolio-intro p{max-width:390px;color:var(--muted);font-size:13px;line-height:1.7;margin:0}
+.project-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:15px}.project-card{grid-column:span 3;display:block;padding:9px;background:#e9e9e1;transition:transform .25s;overflow:hidden}.project-card:hover{transform:translateY(-5px)}.project-card.wide{grid-column:span 6}
+.project-art{height:290px;position:relative;overflow:hidden;display:grid;grid-template-columns:1.15fr .85fr;gap:7px;padding:7px}.project-card.wide .project-art{height:320px;grid-template-columns:1.3fr .7fr}
+.art-tile{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}.art-tile .art-word{font:700 clamp(30px,5vw,73px)/.82 "Space Grotesk",sans-serif;letter-spacing:-.11em;text-transform:uppercase}.art-stack{display:grid;grid-template-rows:1fr 1fr;gap:7px;min-width:0}.art-stamp{position:absolute;right:12px;top:12px;font:9px "DM Mono",monospace;text-transform:uppercase}.art-circle{width:145px;height:145px;border:1px solid currentColor;border-radius:50%;display:flex;align-items:center;justify-content:center;font:10px "DM Mono",monospace;text-align:center;transform:rotate(-13deg)}.art-line{height:1px;background:currentColor;width:80%;position:absolute;bottom:22px;left:10%}
+.art-admin{background:#ff795d;color:#171717}.art-admin .art-word{transform:rotate(-8deg)}.art-admin .art-stack div:first-child{background:#d8f36a;color:#171717}.art-admin .art-stack div:last-child{background:#171717;color:#f7f7f2}
+.art-cinema{background:#1d1d1b;color:#f7f7f2}.art-cinema .art-word{font-weight:500}.art-cinema .art-stack div:first-child{background:#9ec5ff;color:#171717}.art-cinema .art-stack div:last-child{background:#ff795d;color:#171717}
+.art-realestate{background:#c7d7cc;color:#171717}.art-realestate .art-stack div:first-child{background:#171717;color:#f7f7f2}.art-realestate .art-stack div:last-child{background:#e9e9e1;color:#171717}
+.art-ugc{background:#f0c8ad;color:#171717}.art-ugc .art-stack div:first-child{background:#ff795d;color:#fff}.art-ugc .art-stack div:last-child{background:#d8f36a;color:#171717}
+.art-motion{background:#d8f36a;color:#171717}.art-motion .art-stack div:first-child{background:#ff795d;color:#fff}.art-motion .art-stack div:last-child{background:#171717;color:#f7f7f2}
+.art-long{background:#242420;color:#f7f7f2}.art-long .art-stack div:first-child{background:#d8f36a;color:#171717}.art-long .art-stack div:last-child{background:#9ec5ff;color:#171717}
+.project-meta{display:flex;justify-content:space-between;align-items:end;padding:18px 8px 10px;gap:16px}.project-meta h3{font:600 clamp(26px,3.5vw,43px)/.9 "Space Grotesk",sans-serif;letter-spacing:-.085em;margin:0}.project-meta p{font:9px "DM Mono",monospace;text-transform:uppercase;color:var(--muted);margin:10px 0 0}.project-meta .open{font-size:25px;flex-shrink:0}
+.work-foot{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font:10px "DM Mono",monospace;text-transform:uppercase}
+.client-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.client{min-height:112px;padding:19px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center;transition:.2s}.client:hover{background:var(--acid)}.client h3{font:600 18px "Space Grotesk",sans-serif;margin:0;letter-spacing:-.04em}.client p{font-size:10px;color:var(--muted);margin:5px 0 0}.handle{font:10px "DM Mono",monospace;color:#d84e36;margin-top:5px}.client .arrow{font-size:20px}
+.skills{display:flex;flex-wrap:wrap;gap:9px}.pill{border:1px solid var(--ink);border-radius:50px;padding:10px 15px;font-size:11px;font-weight:600}.pill:hover{background:var(--acid)}
+.process{display:grid;grid-template-columns:1fr 1fr;gap:8vw}.process h3{font:600 clamp(34px,4.6vw,60px)/.95 "Space Grotesk",sans-serif;letter-spacing:-.08em;margin:0}.process p{font-size:14px;line-height:1.9;color:var(--muted);margin:0}
+.contact{background:#171717;color:#f7f7f2;padding:90px 0}.contact-inner{display:flex;justify-content:space-between;align-items:end;gap:35px}.contact h2{font:600 clamp(58px,10vw,140px)/.82 "Space Grotesk",sans-serif;letter-spacing:-.1em;margin:22px 0 0}.contact h2 span{color:var(--acid)}.contact-right{display:grid;gap:13px;font-size:13px;min-width:270px}.contact-right a{border-bottom:1px solid #555;padding-bottom:8px}.contact-right a:hover{color:var(--acid)}
+footer{padding:22px 0;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font:9px "DM Mono",monospace;text-transform:uppercase}
+@media(max-width:700px){.wrap{width:calc(100% - 34px)}.topbar{height:64px}.links{gap:13px;font-size:10px}.links a:last-child{padding:8px 11px}.hero{padding:50px 0 45px;min-height:590px}.hero-top{align-items:flex-start;gap:12px;flex-direction:column}.hero h1{font-size:clamp(61px,16vw,112px);margin:60px 0 42px}.hero-bottom,.intro-grid,.process{grid-template-columns:1fr;gap:24px}.hero-cta{justify-content:flex-start}section{padding:70px 0}.section-label{align-items:flex-start;gap:15px;flex-direction:column}.project-grid{grid-template-columns:1fr;gap:13px}.project-card,.project-card.wide{grid-column:span 1}.project-art,.project-card.wide .project-art{height:225px}.project-meta h3{font-size:31px}.client-grid{grid-template-columns:1fr}.numbers{grid-template-columns:repeat(3,1fr)}.number strong{font-size:27px}.contact-inner{align-items:flex-start;flex-direction:column}.contact-right{width:100%}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}*{transition:none!important}}
+
+/* Custom editor-inspired cursor */
+@media (pointer:fine) and (hover:hover) {
+  body, a, button { cursor: none !important; }
+  .editor-cursor {
+    position: fixed; left: 0; top: 0; z-index: 99999;
+    width: 38px; height: 38px; pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width .18s ease, height .18s ease, opacity .18s ease;
+    opacity: 0; will-change: transform;
+  }
+  .editor-cursor.is-visible { opacity: 1; }
+  .editor-cursor.is-hover { width: 48px; height: 48px; }
+  .editor-cursor svg { display:block; width:100%; height:100%; overflow:visible; }
+  .editor-cursor .cursor-shadow { filter: drop-shadow(0 3px 5px rgba(0,0,0,.22)); }
+}
+@media (pointer:coarse), (prefers-reduced-motion:reduce) {
+  .editor-cursor { display:none !important; }
+}
+
+
+/* Subtle lift for interactive links and controls */
+@media (hover:hover) and (pointer:fine) {
+  a, button, [role="button"] {
+    transition: transform .22s cubic-bezier(.2,.75,.25,1), opacity .22s ease,
+                background-color .22s ease, color .22s ease;
+  }
+  .links a:hover, .brand:hover, .button:hover, .project-card:hover,
+  .client:hover, .work-foot a:hover, .contact-right a:hover {
+    transform: translateY(-3px) scale(1.012);
+  }
+  .project-card:hover { transform: translateY(-5px) scale(1.008); }
+  .client:hover { transform: translateY(-2px); }
+}
+
+
+/* Scroll-reveal motion: restrained, staggered, and accessible */
+html.js-motion .reveal-on-scroll {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity .7s cubic-bezier(.2,.7,.2,1),
+              transform .7s cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+html.js-motion .reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+html.js-motion .reveal-on-scroll.reveal-from-left { transform: translate3d(-22px, 0, 0); }
+html.js-motion .reveal-on-scroll.reveal-from-right { transform: translate3d(22px, 0, 0); }
+html.js-motion .reveal-on-scroll.reveal-from-left.is-revealed,
+html.js-motion .reveal-on-scroll.reveal-from-right.is-revealed { transform: translate3d(0, 0, 0); }
+@media (prefers-reduced-motion: reduce) {
+  html.js-motion .reveal-on-scroll,
+  html.js-motion .reveal-on-scroll.is-revealed {
+    opacity: 1 !important; transform: none !important; transition: none !important;
+  }
+}
+
+
+.preview-trigger{position:absolute;z-index:2;left:18px;bottom:18px;display:flex;align-items:center;gap:9px;border:1px solid rgba(23,23,23,.65);border-radius:50px;background:var(--acid);color:#171717;padding:11px 15px;font:700 10px "DM Mono",monospace;letter-spacing:.04em;cursor:pointer;box-shadow:0 4px 0 rgba(23,23,23,.16);transition:transform .2s,box-shadow .2s}
+.preview-trigger:hover{transform:translateY(-3px);box-shadow:0 7px 0 rgba(23,23,23,.13)}
+.preview-trigger small{padding-left:8px;border-left:1px solid rgba(23,23,23,.3);font-size:8px;opacity:.7}
+.video-modal{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:24px}
+.video-modal.is-open{display:flex}
+.video-modal-backdrop{position:absolute;inset:0;background:rgba(10,10,10,.82);backdrop-filter:blur(8px)}
+.video-modal-panel{position:relative;z-index:1;width:min(980px,100%);background:var(--paper);padding:22px;box-shadow:0 25px 90px rgba(0,0,0,.35)}
+.video-modal-head{display:flex;justify-content:space-between;align-items:center;padding:0 0 17px}
+.video-modal-head h2{font:600 clamp(27px,4vw,42px)/.95 "Space Grotesk",sans-serif;letter-spacing:-.07em;margin:8px 0 0}
+.modal-close{border:1px solid var(--ink);background:transparent;border-radius:50%;width:40px;height:40px;font-size:27px;line-height:1;cursor:pointer}
+.drive-frame-wrap{position:relative;width:100%;aspect-ratio:16/9;background:#111}
+.drive-frame-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-modal-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:17px;flex-wrap:wrap}
+.preview-nav,.video-modal-foot>a{border:1px solid var(--ink);border-radius:50px;padding:10px 14px;background:transparent;color:var(--ink);font:10px "DM Mono",monospace;cursor:pointer}
+.preview-nav:disabled{opacity:.25;cursor:not-allowed}
+.video-modal-foot>a{background:var(--ink);color:white}
+@media(max-width:600px){.video-modal{padding:10px}.video-modal-panel{padding:13px}.video-modal-foot{gap:8px}.preview-nav,.video-modal-foot>a{padding:9px 10px;font-size:9px}.preview-trigger{left:12px;bottom:12px;padding:9px 12px}}
+@media(prefers-reduced-motion:reduce){.preview-trigger{transition:none}}
+
+
+/* Always-visible embedded portfolio previews */
+.project-art{isolation:isolate;background:#111}
+.project-art.video-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;gap:7px;padding:7px}
+.project-art.video-pair>.portfolio-video{position:relative;inset:auto;width:100%;height:100%;min-height:0;border:0;z-index:5;background:#111;display:block;aspect-ratio:16/9;object-fit:cover}
+.project-art.video-pair>.portfolio-video:only-child{grid-column:1/-1}
+.project-art.video-pair>.portfolio-video:nth-child(3){grid-column:1/-1;width:50%;justify-self:center}
+.project-art.video-pair:not(.art-long)>.art-tile,.project-art.video-pair:not(.art-long)>.art-stack{display:none}
+@media(max-width:700px){.project-art.video-pair{gap:5px;padding:5px}}
+
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="#" aria-label="Sarad Pratap Singh home">
+SARAD<span>.</span><nav class="links"><a href="#work">Work</a><a href="#about">Manifesto</a><a href="#clients">Family</a><a href="#contact">Contact ↗</a></nav></div></header>
+<main>
+<div class="wrap">
+<section class="hero" style="border:0">
+<div class="hero-top"><div class="mono">Video editor · Motion designer · Visual storyteller</div><div class="availability mono"><i class="dot"></i> Available for remote projects</div></div>
+<h1>Ideas into<br><span class="outline">impact.</span></h1>
+<div class="hero-bottom"><p>I turn good ideas into <em>moving stories.</em> Video editing, motion design and visual storytelling with a point of view.</p><div class="hero-cta"><a class="button dark" href="https://www.behance.net/saradthakur" target="_blank" rel="noopener">Explore my work ↗</a><a class="button hot" href="https://wa.me/917881151861" target="_blank" rel="noopener">Start a project ↗</a></div></div>
+</section>
+</div>
+<div class="ticker"><div class="ticker-track"><span>EDIT WITH INTENTION <b>✳</b> MAKE IT MOVE <b>✳</b> STORY FIRST <b>✳</b> GOOD ENERGY, GREAT WORK <b>✳</b> EDIT WITH INTENTION <b>✳</b> MAKE IT MOVE <b>✳</b> STORY FIRST <b>✳</b> GOOD ENERGY, GREAT WORK <b>✳</b></span></div></div>
+<div class="wrap">
+<section id="about"><div class="section-label"><div><div class="mono">01 / A little about me</div><h2>Not just cuts.<br>Creative choices.</h2></div><div class="mono">LUCKNOW, INDIA ↗</div></div>
+<div class="intro-grid"><p class="big-copy">I'm Sarad Pratap Singh — a video editor and post-production creative who believes <span>every frame has a job to do.</span></p><div><p class="bio">I create social-first content, short-form videos, brand films and real-estate marketing creatives. My approach brings together clean editing, strong typography, motion design and visual storytelling — from the first footage review to final delivery.</p><div class="numbers"><div class="number"><strong>02</strong><span>Years experience</span></div><div class="number"><strong>05+</strong><span>Creative disciplines</span></div><div class="number"><strong>∞</strong><span>Ideas to explore</span></div></div></div></div>
+</section>
+<section id="work">
+<div class="section-label"><div><div class="mono">02 / Selected work</div><h2>Different worlds.<br>One edit style.</h2></div><div class="mono">OPEN A CATEGORY ↗</div></div>
+<div class="portfolio-intro">
+<div class="mono">A curated selection of edits, motion and visual stories.</div>
+<p>Explore each collection on Behance. Long-form edits and extended videos are grouped separately on Google Drive.</p>
+</div>
+<div class="project-grid">
+<a class="project-card" href="https://www.behance.net/gallery/257619129/Admin-videos" target="_blank" rel="noopener" aria-label="Open Admin videos on Behance">
+<div class="project-art art-admin video-pair">
+<video class="portfolio-video" title="Admin video preview 1" autoplay muted loop playsinline webkit-playsinline preload="none"><source data-src="https://res.cloudinary.com/ttvhtmer/video/upload/q_auto:good/sarad_video_edit_1.mp4" type="video/mp4"></video>
+<video class="portfolio-video" title="Admin video preview 2" autoplay muted loop playsinline webkit-playsinline preload="none"><source data-src="https://res.cloudinary.com/ttvhtmer/video/upload/q_auto:good/CFM_informative_video_15-9-26.mp4" type="video/mp4"></video>
+<video class="portfolio-video" title="Admin video preview 3" autoplay muted loop playsinline webkit-playsinline preload="none"><source data-src="https://res.cloudinary.com/ttvhtmer/video/upload/q_auto:good/tanmay_video.mp4" type="video/mp4"></video>
+</div>
+<div class="project-meta"><div><h3>Admin & social videos</h3><p>Informative edits · Talking-head content · Social cuts</p></div><span class="open">↗</span></div>
+</a>
+<a class="project-card" href="https://www.behance.net/gallery/257618983/Cinematic-videos" target="_blank" rel="noopener" aria-label="Open Cinematic videos on Behance">
+<div class="project-art art-cinema video-pair">
+<video class="portfolio-video" title="Cinematic video preview 1" autoplay muted loop playsinline webkit-playsinline preload="none"><source data-src="https://res.cloudinary.com/ttvhtmer/video/upload/q_auto:good/sarad_video_1_15-4-2026.mp4" type="video/mp4"></video>
+<video class="portfolio-video" title="Cinematic video preview 2" autoplay muted loop playsinline webkit-playsinline preload="none"><source data-src="https://res.cloudinary.com/ttvhtmer/video/upload/q_auto:good/tapa_toro_3-5-26.mp4" type="video/mp4"></video>
+</div>
+<div class="project-meta"><div><h3>Cinematic videos</h3><p>Visual storytelling · Restaurant & lifestyle films</p></div><span class="open">↗</span></div>
+</a>
+<a class="project-card" href="https://www.behance.net/gallery/257618387/Real-estates-work" target="_blank" rel="noopener" aria-label="Open Real estate work on Behance">
+<div class="project-art art-realestate video-pair">
+<video class="portfolio-video" title="Real estate video preview 1" autoplay muted loop playsinline webkit-playsinline preload="none"><source data-src="https://res.cloudinary.com/ttvhtmer/video/upload/q_auto:good/Sarad_real_estate.mp4" type="video/mp4"></video>
+<video class="portfolio-video" title="Real estate video preview 2" autoplay muted loop playsinline webkit-playsinline preload="none"><source data-src="https://res.cloudinary.com/ttvhtmer/video/upload/q_auto:good/RM_estate.mp4" type="video/mp4"></video>
+</div>
+<div class="project-meta"><div><h3>Real estate work</h3><p>Property films · Project promos · Location stories</p></div><span class="open">↗</span></div>
+</a>
+<a class="project-card" href="https://www.behance.net/gallery/257617757/Ugc-video" target="_blank" rel="noopener" aria-label="Open UGC videos on Behance">
+<div class="project-art art-ugc video-pair">
+<video class="portfolio-video" title="UGC video preview 1" autoplay muted loop playsinline webkit-playsinline preload="none"><source data-src="https://res.cloudinary.com/ttvhtmer/video/upload/q_auto:good/SOCIAL_BINGE-1.mp4" type="video/mp4"></video>
+<video class="portfolio-video" title="UGC video preview 2" autoplay muted loop playsinline webkit-playsinline preload="none"><source data-src="https://res.cloudinary.com/ttvhtmer/video/upload/q_auto:good/Klyr_1_15-4-26_1.mp4" type="video/mp4"></video>
+<video class="portfolio-video" title="UGC video preview 3" autoplay muted loop playsinline webkit-playsinline preload="none"><source data-src="https://res.cloudinary.com/ttvhtmer/video/upload/q_auto:good/Klyr_1_15-4-26_3.mp4" type="video/mp4"></video>
+</div>
+<div class="project-meta"><div><h3>UGC & branded content</h3><p>Creator-led content · Brand storytelling · Ad edits</p></div><span class="open">↗</span></div>
+</a>
+<a class="project-card" href="https://www.behance.net/gallery/257617077/Motion-graphics" target="_blank" rel="noopener" aria-label="Open Motion graphics on Behance">
+<div class="project-art art-motion video-pair">
+<video class="portfolio-video" title="Typography motion graphics preview" autoplay muted loop playsinline webkit-playsinline preload="none"><source data-src="https://res.cloudinary.com/ttvhtmer/video/upload/q_auto:good/ctrl_typography-2.mp4" type="video/mp4"></video>
+</div>
+<div class="project-meta"><div><h3>Motion graphics</h3><p>Typography · Animation · Visual effects</p></div><span class="open">↗</span></div>
+</a>
+<a class="project-card" href="https://drive.google.com/drive/folders/1Gw8b511X-rLm4Bqi6Yfr0bUufVqUpV3k?usp=sharing" target="_blank" rel="noopener" aria-label="Open long-form videos on Google Drive">
+<div class="project-art art-long">
+<div class="art-tile"><span class="art-stamp">06 / EXTENDED CUTS</span><div class="art-word">LONG<br>FORM.</div><div class="art-line"></div></div>
+<div class="art-stack"><div class="art-tile"><div class="art-circle">DEEP<br>DIVE<br>EDITING</div></div><div class="art-tile"><small>YouTube<br>Long videos<br>Full stories</small></div></div>
+</div>
+<div class="project-meta"><div><h3>Long-form videos</h3><p>YouTube · Extended edits · Google Drive</p></div><span class="open">↗</span></div>
+</a>
+</div>
+<div class="work-foot"><span>Choose a collection to explore</span><a href="https://www.behance.net/saradthakur" target="_blank" rel="noopener">All work on Behance ↗</a></div>
+</section>
+<section><div class="section-label"><div><div class="mono">03 / My toolkit</div><h2>Tools are just<br>the beginning.</h2></div></div><div class="skills"><span class="pill">Premiere Pro</span><span class="pill">After Effects</span><span class="pill">DaVinci Resolve</span><span class="pill">Media Encoder</span><span class="pill">Fusion</span><span class="pill">Higgsfield</span><span class="pill">Runway</span><span class="pill">Google Veo</span><span class="pill">Flow AI</span><span class="pill">ElevenLabs</span><span class="pill">Topaz Tools</span><span class="pill">Motion Graphics</span><span class="pill">Typography</span><span class="pill">Compositing</span></div></section>
+<section id="clients"><div class="section-label"><div><div class="mono">04 / Good people, good work</div><h2>Good people<span style="color:var(--coral)">.</span></h2></div><div class="mono">CLIENTS & CREATOR COLLABORATIONS</div></div>
+<div class="client-grid">
+<a class="client" href="https://www.instagram.com/klyrcreative.co/" target="_blank" rel="noopener"><div><h3>Klyr Creative Co</h3><div class="handle">@klyrcreative.co ↗</div><p>Social media marketing · Content & branding</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/brandbrokers.in/" target="_blank" rel="noopener"><div><h3>BrandBrokers.in</h3><div class="handle">@brandbrokers.in ↗</div><p>Creator ecosystem · Brand collaborations</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/clickfield_media/" target="_blank" rel="noopener"><div><h3>Clickfield Media</h3><div class="handle">@clickfield_media ↗</div><p>Digital marketing · Performance ads</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/3hourstudios/" target="_blank" rel="noopener"><div><h3>3Hour Studios</h3><div class="handle">@3hourstudios ↗</div><p>Graphic design · Marketing & web</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/jindalpropertysolution/" target="_blank" rel="noopener"><div><h3>Jindal Property Solutions</h3><div class="handle">@jindalpropertysolution ↗</div><p>Real estate · Property content</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/me_priyanshi.14/" target="_blank" rel="noopener"><div><h3>Priyanshi V. Mishra</h3><div class="handle">@me_priyanshi.14 ↗</div><p>Lifestyle creator · Personal brand</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.youtube.com/@PurshotamVashisht" target="_blank" rel="noopener"><div><h3>Purshotam Vashisht</h3><div class="handle">YouTube · @PurshotamVashisht ↗</div><p>YouTube creator · Food & challenge videos</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/flashnclick/" target="_blank" rel="noopener"><div><h3>Flash N Click</h3><div class="handle">@flashnclick ↗</div><p>Photography · Newborn, maternity & weddings</p></div><span class="arrow">↗</span></a>
+</div></section>
+<section><div class="section-label"><div><div class="mono">05 / The process</div><h2>Good work is<br>a team sport.</h2></div></div><div class="process"><h3>Listen closely.<br>Make boldly.<br>Polish the details.</h3><p>From footage review and creative execution to feedback, revisions and final delivery. I focus on clear storytelling, considered pacing, strong typography and dependable communication. I also support edit reviews, corrections and coordination across editing workflows.</p></div></section>
+</div>
+<section class="contact" id="contact"><div class="wrap contact-inner"><div><div class="mono">Got an idea in mind?</div><h2>LET'S MAKE<br><span>SOMETHING.</span></h2></div><div class="contact-right"><a href="https://wa.me/917881151861" target="_blank" rel="noopener">WhatsApp · +91 78811 51861 ↗</a><a href="mailto:saradthakur2020@gmail.com">saradthakur2020@gmail.com ↗</a><a href="https://www.behance.net/saradthakur" target="_blank" rel="noopener">Behance · Selected work ↗</a><span class="mono">Lucknow, India · Available worldwide</span></div></div></section>
+</main>
+<footer class="wrap"><span>© 2026 SARAD PRATAP SINGH</span><span>INDEPENDENT CREATIVE · VIDEO & MOTION</span></footer>
+
+
+
+
+<div class="editor-cursor" id="editorCursor" aria-hidden="true">
+  <svg viewBox="0 0 48 48" role="presentation">
+    <g class="cursor-shadow">
+      <rect x="3" y="3" width="38" height="38" rx="9" fill="#6427c7" stroke="#171717" stroke-width="1.5"/>
+      <text x="22" y="28" text-anchor="middle" fill="#ffffff"
+            font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700"
+            letter-spacing="-1.4">Ae</text>
+    </g>
+  </svg>
+</div>
+
+
+
+<script>
+(() => {
+  const cursor = document.getElementById('editorCursor');
+  if (!cursor || !window.matchMedia('(pointer:fine) and (hover:hover)').matches ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  let x = -100, y = -100, raf = 0;
+  const move = (event) => {
+    x = event.clientX;
+    y = event.clientY;
+    if (!raf) {
+      raf = requestAnimationFrame(() => {
+        cursor.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+        cursor.classList.add('is-visible');
+        raf = 0;
+      });
+    }
+  };
+
+  document.addEventListener('pointermove', move, { passive: true });
+  document.addEventListener('pointerdown', () => cursor.classList.add('is-hover'));
+  document.addEventListener('pointerup', () => cursor.classList.remove('is-hover'));
+  document.querySelectorAll('a, button, [role="button"]').forEach((el) => {
+    el.addEventListener('pointerenter', () => cursor.classList.add('is-hover'));
+    el.addEventListener('pointerleave', () => cursor.classList.remove('is-hover'));
+  });
+  document.addEventListener('pointerleave', () => cursor.classList.remove('is-visible'));
+  document.addEventListener('pointerenter', () => cursor.classList.add('is-visible'));
+})();
+</script>
+
+
+<script>
+(() => {
+  const root = document.documentElement;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  root.classList.add('js-motion');
+
+  const targets = [
+    '.hero-top', '.hero h1', '.hero-bottom',
+    '.section-label', '.portfolio-intro',
+    '.intro-grid > *', '.number',
+    '.project-card', '.work-foot',
+    '.skills .pill', '.client',
+    '.process > *', '.contact-inner > *',
+    'footer > *'
+  ];
+
+  const elements = [...new Set(targets.flatMap(selector =>
+    [...document.querySelectorAll(selector)]
+  ))];
+
+  elements.forEach((el, index) => {
+    el.classList.add('reveal-on-scroll');
+    const group = el.matches('.project-card, .client, .skills .pill, .number');
+    if (group) el.style.setProperty('--reveal-delay', `${(index % 6) * 65}ms`);
+  });
+
+  if (!('IntersectionObserver' in window)) {
+    elements.forEach(el => el.classList.add('is-revealed'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, currentObserver) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        currentObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -45px 0px' });
+
+  elements.forEach(el => observer.observe(el));
+})();
+</script>
+
+
+<script>
+// Load each large Cloudinary video only when its portfolio card approaches the viewport.
+document.addEventListener('DOMContentLoaded', () => {
+  const videos = document.querySelectorAll('.portfolio-video');
+  const startVideo = (video) => {
+    if (!video.dataset.loaded) {
+      const source = video.querySelector('source[data-src]');
+      if (source) {
+        source.src = source.dataset.src;
+        video.dataset.loaded = 'true';
+        video.load();
+      }
+    }
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+    const playWhenReady = () => video.play().catch(() => {});
+    if (video.readyState >= 2) playWhenReady();
+    else video.addEventListener('canplay', playWhenReady, { once: true });
+  };
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target;
+        if (entry.isIntersecting) startVideo(video);
+        else if (!video.paused) video.pause();
+      });
+    }, { rootMargin: '250px 0px', threshold: 0.05 });
+    videos.forEach((video) => observer.observe(video));
+  } else {
+    videos.forEach(startVideo);
+  }
+});
+</script>
+
+</body></html>
